@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rock Paper Scissors</title>
+  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+  <link href="style/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <div class="app-wrap">
+
+    <div class="header">
+      <h1> Rock Paper Scissors</h1>
+      <p> The <a href="https://www.wikihow.com/Play-Rock,-Paper,-Scissors">rules</a> of the game are simple. <span>5</span> Rounds ... <span>1</span> winner. Do you have what it takes to be the next grand master?</p>
+    </div>
+    <div class="background">
+      <div class="game">
+        <div class="instructions">First to 5 points to wins the game!</div>
+
+        <div class="start">
+          <button> Start a New Game</button>
+        </div>
+
+        <div class="scoreBoard hidden">
+          <p>Your Score: <span id="userScore">W</span></p>
+          <p>Round: <span id="round">1</span></p>
+          <p>Rival Score: <span id="pcScore">L</span></p>
+        </div>
+
+        <div class="weapon hidden">
+          <p>Please select your weapon</p>
+        </div>
+
+        <div class="container hidden">
+          <button class="item" id="rock" value="rock" type="button">ROCK</button>
+          <button class="item" id="paper" value="paper" type="button">PAPER</button>
+          <button class="item" id="scissors" value="scissors" type="button">SCISSORS</button>
+        </div>
+
+        <div class="answer hidden">
+          <p>You selected <span class="user">word</span> and the computer selected <span class="pc">word</span></p>
+          <div class="result">
+            <p class="winner hidden">You <span class="win">win!</span></p>
+            <p class="loser hidden">You <span class="lose">lose.</span></p>
+            <p class="draw hidden">It's a <span class="scoreEven">draw.</span> Play again.</p>
+          </div>
+        </div>
+
+<div class="reset hidden">
+          <button>Reset</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p> Rudi Boshoff 2018</p>
+      <a href="https://www.theodinproject.com/courses/web-development-101/lessons/rock-paper-scissors" target="_blank"> The Odin Project</a>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./script/script.js"></script>
+
+</body>
+</html>

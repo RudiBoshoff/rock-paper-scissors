@@ -1,0 +1,193 @@
+:root {
+/*     --main-color: #20B2AA; */
+  --main-color: #070a0d;
+}
+
+/* REMOVE DEFAULT STYLING */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body{
+  background: #18232b;
+}
+/* ROCK PAPER SCISSORS BACKGROUND */
+/* body{
+  background-image: url(https://thenypost.files.wordpress.com/2014/06/rock-paper.jpg);
+  background-size: 100vw 85vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  height: 79vh;
+} */
+
+/* FOOTER STYLING */
+footer{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+/*   border: 3px solid springgreen; */
+  justify-content: space-between;
+  height: 30px;
+  line-height: 23px;
+  background: var(--main-color);
+  color: rgba(255,255,255,0.5);
+  padding: 5px 20px;
+}
+
+footer a{
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+}
+footer a:hover{
+  color: rgba(255,255,255,0.8);
+}
+/* HEADER STYLING */
+.header{
+  text-align: center;
+/*   border: 3px solid red; */
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  color: white;
+  background: var(--main-color);
+}
+
+.header >*{
+  padding: 10px 10px;;
+  line-height: 20px;
+  font-size: 20px;
+/*   border: 1px solid blue; */
+}
+
+.header a{
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+.header a:hover{
+  color: #6db7ff;
+}
+
+.header h1{
+  font-size: 60px;
+  line-height: 60px;
+}
+
+/* START BUTTON POSITION */
+.start{
+  top: 50px;
+  position: relative;
+  margin: 0px auto;
+  width: 300px;
+  height: 150px;
+  margin-bottom: 255px;
+}
+/* RESET BUTTON STYLING */
+.reset{
+  top: 50px;
+  position: relative;
+  width: 100px;
+  height: 50px;
+}
+
+/* BUTTON SYLYING */
+button{
+  border: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background: #18232b;
+  border-radius: 5px;
+}
+
+button:hover{
+  background: dodgerblue;
+  transform: scale(1.1);
+}
+/* SCORE BOARD STYLING */
+.scoreBoard{
+  text-align: center;
+  margin: 30px auto;
+  width: 40vw;
+  border: 3px solid white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-width: 200px;
+  font-size: 20px;
+  min-height: 20px;
+}
+.scoreBoard>*{
+  color: white;
+  font-weight: bold;
+  flex: 1 2 150px;
+}
+.scoreBoard span{
+  padding-left: 10px;
+}
+
+/* GAME LAYOUT AND STYLING */
+.game{
+/*   border: 3px solid dodgerblue; */
+  display:flex;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+/*   text-shadow: 0px 0px 5px black; */
+  padding: 50px 20px;
+  margin: 50px 50px;
+  height: 550px;
+}
+.game{
+  background: rgba(0,0,0,0.7);
+
+}
+
+.container{
+  display: flex;
+/*   border: 3px solid springgreen; */
+  height: 100px;
+  width: 60vw;
+  margin: 30px 0;
+  flex-wrap:wrap;
+}
+
+.item{
+/*   border: 3px solid hotpink; */
+  margin: 0 20px;
+  flex: 1 1 100px;
+}
+
+/* HIDDEN ELEMENTS */
+.hidden{
+  display: none;
+}
+
+.hide{
+/*   display:none; */
+}
+/* RESULT STYLING */
+.user,.win{
+    color: dodgerblue;
+/*   text-shadow: 0px 0px 5px white; */
+}
+
+.pc, .lose{
+    color: hotpink;
+}
+
+.scoreEven{
+  color: dodgerblue;
+}

@@ -1,4 +1,4 @@
-# PROJECT: ROCK PAPER SCISSORS https://www.theodinproject.com/courses/web-development-101/lessons/rock-paper-scissors
+PROJECT: ROCK PAPER SCISSORS https://www.theodinproject.com/courses/web-development-101/lessons/rock-paper-scissors
 
 Assignment:  
 1.Start a new git repo for your project.  
